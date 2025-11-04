@@ -48,6 +48,33 @@ You can optionally enable **Pro Mode** to fine-tune curve smoothing, contour sim
 
 **Default values (when Pro Mode is OFF):**
 
+---
+
+## 🔄 Optional Version: Background Removal via API (remove.bg)
+
+There is an **alternative version** of this project that automatically removes the background using the `remove.bg` API.
+
+### What this version does:
+- Sends the input image to remove.bg
+- Receives a transparent PNG with clean edges
+- Passes that PNG to the same DXF generator pipeline
+
+<p align="center">
+  <em>JPEG → remove.bg API → Transparent PNG → DXF Generator</em>
+</p>
+
+### Benefits
+- No need to manually remove background
+- Works even if the image does not have transparency (PNG alpha)
+- Ideal for quick scanning of tools
+
+### Requirements
+- remove.bg API key: https://www.remove.bg/api
+- Internet connection
+
+Place your API key in a `.env` file:
+
+
 ```python
 DEFAULT_USE_SPLINE = True
 DEFAULT_EPSILON = 0.0025
