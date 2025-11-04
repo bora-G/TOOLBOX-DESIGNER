@@ -1,4 +1,4 @@
-# 🧰 Toolbox DXF Generator (Transparent PNG + Pro Mode)
+# 🧰 Toolbox DXF Generator 
 
 This desktop application processes **transparent PNG images (with alpha channel)**, detects the contours of the tools, scales them according to a reference object, and exports a **DXF CAD file** ready for CNC / laser cutting.
 
