@@ -7,9 +7,9 @@ from scipy.interpolate import splprep, splev
 import os
 import requests
 
-# 🔑 remove.bg API entegrasyonu
+
 def remove_bg(input_path):
-    API_KEY = "your-api-key"  # ← kendi API key'ini buraya koy
+    API_KEY = "your-api-key"  
     output_path = "temp_removed.png"
 
     with open(input_path, "rb") as img_file:
@@ -184,5 +184,6 @@ tk.Button(
     relief="groove",
     bd=2,
 ).grid(row=5, column=1, pady=(20, 10))
+
 
 root.mainloop()
